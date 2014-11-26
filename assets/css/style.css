@@ -252,7 +252,7 @@ a.brand:visited:hover {
 }
 .nav li a:hover,
 .nav li a.active {
-  font-weight: bold;
+
   text-decoration: underline;
 }
 h1,
