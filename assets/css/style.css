@@ -234,7 +234,7 @@ a.brand:visited:hover {
 .nav li.active:hover a:link,
 .nav li.active:hover a:visited,
 .nav {
-  color: #d93333;
+  color: #333;
   text-shadow: none;
   background: none;
   -webkit-box-shadow: none;
