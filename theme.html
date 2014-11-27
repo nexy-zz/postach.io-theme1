@@ -119,12 +119,13 @@
               <p class="muted">Posted on {{ post.created_at|format_date }}</p>
 
 
-<div id="{{ post.permalink }}">This is foo!</div>
-
+<div id="{{ post.permalink }}">
 
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
               </div>
+              
+</div>
 
             </div>
           </div>
