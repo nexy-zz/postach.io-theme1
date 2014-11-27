@@ -114,12 +114,13 @@
           {% for post in posts %}
           <div class="row post">
             <div class="span6">
-              <!-- <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2> -->
-              <h2><span onclick="toggle_visibility('{{ post.permalink }}');">{{ post.title }}</span></h2>
+              <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+              <input type="button" value="+" onclick="toggle_visibility('{{ post.permalink }}');">
+              <~-- <h2><span onclick="toggle_visibility('{{ post.permalink }}');">{{ post.title }}</span></h2> -->
               <p class="muted">Posted on {{ post.created_at|format_date }}</p>
 
 
-<div id="{{ post.permalink }}" style="display:none;">
+<div id="{{ post.permalink }}">
 
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
