@@ -32,18 +32,6 @@
     </style>
     -->
 
-<script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
-
 
     {% if site.analytics %}
       <script>
@@ -115,13 +103,8 @@
           <div class="row post">
             <div class="span6">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-              <input type="button" value="+" onclick="toggle_visibility('{{ post.permalink }}');">
-              <!-- <h2><span onclick="toggle_visibility('{{ post.permalink }}');">{{ post.title }}</span></h2> -->
               <p class="muted">Posted on {{ post.created_at|format_date }}</p>
-
-
-<div id="{{ post.permalink }}"  style="display:none;">
-
+              
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
               </div>
